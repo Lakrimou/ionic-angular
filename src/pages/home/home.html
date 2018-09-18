@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list inset>
+    <ion-item *ngFor="let user of users">
+      <div>
+        <h2>{{user.name_category}}</h2>
+        <p>{{user.id}}</p>
+        <button block (click)="subCat(user)">click</button>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>

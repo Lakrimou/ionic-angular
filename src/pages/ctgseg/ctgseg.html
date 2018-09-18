@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <h1>secondPage</h1>
+  <ion-list inset>
+    <ion-item *ngFor="let subcateg of subcategs">
+      <div>
+        <h2>{{subcateg.name_category}}</h2>
+        <p>{{subcateg.id}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
